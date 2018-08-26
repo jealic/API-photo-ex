@@ -21,9 +21,11 @@ class Api::V1::PhotosController < ApiController
       }
     else
       render json: {
+
         title: @photo.title,
         date: @photo.date,
         description: @photo.description
+        
       } 
     end   
   end
